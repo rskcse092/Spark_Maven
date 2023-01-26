@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>Spark_Maven</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>Archetype - Spark_Maven</name>
+  <url>http://maven.apache.org</url>
+  <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-core_2.13</artifactId>
+        <version>3.2.3</version>
+        <scope>provided</scope>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-sql_2.13</artifactId>
+        <version>2.3.2</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>corp1</id>
+      <name>Corporate Repository</name>
+      <url>file:///home/myfolder/.m2</url>
+      <layout>default</layout>
+    </repository>
+  </distributionManagement>
+</project>
