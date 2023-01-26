@@ -29,5 +29,6 @@ object SparkRdd extends App {
   println("Action: First element: " + rdd.first())
   println("Action: RDD converted to Array[Int] : ")
   rddCollect.foreach(println)
+  println("end of the program")
 
 }
